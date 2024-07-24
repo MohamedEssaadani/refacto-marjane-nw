@@ -1,4 +1,4 @@
-package com.nimbleways.springboilerplate;
+package com.nimbleways.springboilerplate.enums;
 
 public enum ProductType {
     NORMAL,

@@ -1,12 +1,11 @@
-package com.nimbleways.springboilerplate.services.implementations;
+package com.nimbleways.springboilerplate.services.order;
 
 import com.nimbleways.springboilerplate.dto.product.ProcessOrderResponse;
 import com.nimbleways.springboilerplate.entities.Order;
 import com.nimbleways.springboilerplate.entities.product.Product;
 import com.nimbleways.springboilerplate.exceptions.OrderNotFoundException;
 import com.nimbleways.springboilerplate.repositories.OrderRepository;
-import com.nimbleways.springboilerplate.repositories.ProductRepository;
-import com.nimbleways.springboilerplate.services.implementations.product.ProductService;
+import com.nimbleways.springboilerplate.services.product.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

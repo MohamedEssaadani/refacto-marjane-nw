@@ -1,10 +1,8 @@
 package com.nimbleways.springboilerplate.entities.product;
 
-import com.nimbleways.springboilerplate.ProductType;
+import com.nimbleways.springboilerplate.enums.ProductType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;

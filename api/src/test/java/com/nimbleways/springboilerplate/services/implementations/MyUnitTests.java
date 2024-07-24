@@ -1,11 +1,11 @@
 package com.nimbleways.springboilerplate.services.implementations;
 
-import com.nimbleways.springboilerplate.ProductType;
+import com.nimbleways.springboilerplate.enums.ProductType;
 import com.nimbleways.springboilerplate.entities.product.NormalProduct;
 import com.nimbleways.springboilerplate.entities.product.Product;
 import com.nimbleways.springboilerplate.repositories.ProductRepository;
-import com.nimbleways.springboilerplate.services.implementations.notification.NotificationService;
-import com.nimbleways.springboilerplate.services.implementations.product.ProductService;
+import com.nimbleways.springboilerplate.services.notification.NotificationService;
+import com.nimbleways.springboilerplate.services.product.ProductService;
 import com.nimbleways.springboilerplate.utils.Annotations.UnitTest;
 
 import org.junit.jupiter.api.Test;

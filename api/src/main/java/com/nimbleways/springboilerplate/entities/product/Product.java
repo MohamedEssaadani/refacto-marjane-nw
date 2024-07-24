@@ -1,6 +1,6 @@
 package com.nimbleways.springboilerplate.entities.product;
 
-import com.nimbleways.springboilerplate.ProductType;
+import com.nimbleways.springboilerplate.enums.ProductType;
 import lombok.*;
 
 import javax.persistence.*;

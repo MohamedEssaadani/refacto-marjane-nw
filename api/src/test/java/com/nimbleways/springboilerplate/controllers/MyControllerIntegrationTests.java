@@ -1,6 +1,6 @@
 package com.nimbleways.springboilerplate.controllers;
 
-import com.nimbleways.springboilerplate.ProductType;
+import com.nimbleways.springboilerplate.enums.ProductType;
 import com.nimbleways.springboilerplate.entities.Order;
 import com.nimbleways.springboilerplate.entities.product.ExpirableProduct;
 import com.nimbleways.springboilerplate.entities.product.NormalProduct;
@@ -8,7 +8,7 @@ import com.nimbleways.springboilerplate.entities.product.Product;
 import com.nimbleways.springboilerplate.entities.product.SeasonalProduct;
 import com.nimbleways.springboilerplate.repositories.OrderRepository;
 import com.nimbleways.springboilerplate.repositories.ProductRepository;
-import com.nimbleways.springboilerplate.services.implementations.notification.NotificationService;
+import com.nimbleways.springboilerplate.services.notification.NotificationService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

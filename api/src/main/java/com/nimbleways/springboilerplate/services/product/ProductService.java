@@ -1,9 +1,9 @@
-package com.nimbleways.springboilerplate.services.implementations.product;
+package com.nimbleways.springboilerplate.services.product;
 
 import java.time.LocalDate;
 
 import com.nimbleways.springboilerplate.entities.product.*;
-import com.nimbleways.springboilerplate.services.implementations.notification.NotificationService;
+import com.nimbleways.springboilerplate.services.notification.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
