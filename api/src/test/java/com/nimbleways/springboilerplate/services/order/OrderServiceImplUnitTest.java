@@ -1,5 +1,23 @@
 package com.nimbleways.springboilerplate.services.order;
 
+import com.nimbleways.springboilerplate.dto.product.ProcessOrderResponse;
+import com.nimbleways.springboilerplate.entities.Order;
+import com.nimbleways.springboilerplate.entities.product.Product;
+import com.nimbleways.springboilerplate.exceptions.OrderNotFoundException;
+import com.nimbleways.springboilerplate.repositories.OrderRepository;
+import com.nimbleways.springboilerplate.services.product.ProductService;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.*;
+
 class OrderServiceImplUnitTest {
     @Mock
     private OrderRepository orderRepository;
@@ -10,12 +28,12 @@ class OrderServiceImplUnitTest {
     @InjectMocks
     private OrderServiceImpl orderService;
 
-    public OrderServiceImplTest() {
+    public OrderServiceImplUnitTest() {
         MockitoAnnotations.openMocks(this);
     }
 
     @Test
-    public void processOrder_ShouldProcessProducts_WhenOrderExistsWithProducts() throws OrderNotFoundException {
+    public void shouldProcessProducts() throws OrderNotFoundException {
         // Arrange
         Long orderId = 1L;
         Order order = new Order();
@@ -33,6 +51,6 @@ class OrderServiceImplUnitTest {
         // Assert
         verify(orderRepository).findById(orderId);
         verify(productService).processProduct(product);
-        assertEquals(orderId, response.getOrderId());
+        assertEquals(orderId, response.id());
     }
 }
